@@ -4,6 +4,10 @@ Galeria de componentes e efeitos web com interface futurista estilo cyberpunk, d
 
 O projeto exibe uma coleção de códigos interativos embutidos via CodePen, organizados por categorias e com sistema de filtragem dinâmica.
 
+🌐 Online (GitHub Pages)
+
+https://saulomgg.github.io/WebProjects/cyber-code-gallery/
+
 📌 Sobre
 
 O Cyber Code Gallery é uma biblioteca visual de componentes web focada em:
@@ -53,12 +57,8 @@ Basta abrir o arquivo:
 index.html
 
 no navegador.
+ Online (GitHub Pages)
 
-🌐 Online (GitHub Pages)
-
-Se estiver hospedado no GitHub Pages, acesse:
-
-https://saulomgg.github.io/WebProjects/cyber-code-gallery/
 🎯 Objetivo do projeto
 
 Este projeto foi criado com foco em:
