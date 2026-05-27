@@ -1,0 +1,54 @@
+<!-- 
+    Created by Saulomg2 to provide an interactive visual experience with dynamic particles and an image carousel.
+    This code includes particle animations generated via JavaScript and an action button that smoothly scrolls to the travel packages section.
+    The layout is responsive, ensuring that the page adapts to different screen sizes.
+    The code is perfect for anyone who wants to incorporate interactive visual elements into their website or landing page projects.
+
+    For more examples of free, ready-to-use codes and projects, visit:
+    - YouTube Channel: https://www.youtube.com/@saulomgg?sub_confirmation=1
+    - Instagram: https://www.instagram.com/saulomg2
+    - Official Website: https://www.stampsynk.com
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Station</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="glitch">&#x1f4be; Download Station &#x1f4be;</h1>
+    <p id="ad-message">&#x26a0;&#xfe0f; Click on an ad to release the download &#x26a0;&#xfe0f;</p>
+    
+    <div class="ad-container">
+        <!-- First ad (YouTube) -->
+        <div class="ad-box" id="ad1" onclick="window.open('https://www.youtube.com/@saulomgg?sub_confirmation=1', '_blank');">
+            <h3>YouTube</h3>
+            <p>Visit my channel</p>
+            <i class="fab fa-youtube" style="font-size: 60px; color: #ff0000;"></i> <!-- YouTube icon -->
+        </div>
+        
+        <!-- Second ad (External link) -->
+        <div class="ad-box" id="ad2" onclick="window.open('https://www.bankrollmob.com/?t=31539', '_blank');">
+            <h3>free money</h3>
+            <p>sign up and win</p>
+            <img src="https://www.brmaff.com/banners/1-250x250.gif" border="0" alt="Free no deposit poker bonus at BankrollMob" alt="AD">
+        </div>
+    </div>
+
+    <p style="text-align:center;">
+        <a href="https://stampsynk.com/donation/" target="_blank" style="color: #0ff; font-size: 18px; text-decoration: none; border: 2px solid #0ff; padding: 10px; transition: 0.3s;">
+            Make a Donation
+        </a>
+    </p>
+
+    <button id="btn-download-now" disabled>
+        <i class="fas fa-download"></i> Free Download
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

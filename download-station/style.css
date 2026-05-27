@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    background: #0d0d0d;
+    color: #0ff;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.glitch {
+    font-size: 24px;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #f0f;
+    animation: glitch 1s infinite alternate;
+}
+
+@keyframes glitch {
+    0% { text-shadow: -2px -2px 5px #f0f; }
+    100% { text-shadow: 2px 2px 5px #0ff; }
+}
+
+/* Background effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        repeating-linear-gradient(0deg, 
+            rgba(0, 255, 255, 0.1) 0px, 
+            rgba(0, 255, 255, 0.1) 4px, 
+            transparent 4px, 
+            transparent 6px),
+        radial-gradient(circle at 50% 50%, transparent 0%, rgba(0,0,0,0.8) 100%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.ad-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.ad-box {
+    background: rgba(0, 255, 255, 0.2);
+    border: 2px solid #0ff;
+    padding: 15px;
+    width: 300px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.ad-box:hover {
+    background: rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.ad-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.ad-box:hover img {
+    transform: scale(1.1);
+}
+
+.ad-box.clicked {
+    background: #0f0;
+    border-color: #0f0;
+    color: #000;
+}
+
+button {
+    background: transparent;
+    border: 2px solid #f0f;
+    color: #f0f;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background: #f0f;
+    color: #000;
+}
+
+button:disabled {
+    border-color: #555;
+    color: #555;
+    cursor: not-allowed;
+}
+
+#ad-message {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #fd0000;
+}
