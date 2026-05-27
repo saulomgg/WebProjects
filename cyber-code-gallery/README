@@ -1,0 +1,86 @@
+🧠 Cyber Code Gallery
+
+Galeria de componentes e efeitos web com interface futurista estilo cyberpunk, desenvolvida com HTML, CSS e JavaScript.
+
+O projeto exibe uma coleção de códigos interativos embutidos via CodePen, organizados por categorias e com sistema de filtragem dinâmica.
+
+📌 Sobre
+
+O Cyber Code Gallery é uma biblioteca visual de componentes web focada em:
+
+Interfaces modernas
+Elementos UI reutilizáveis
+Efeitos visuais cyberpunk
+Demonstrações interativas de código
+
+Cada item é exibido em tempo real através de embeds do CodePen, permitindo visualização direta sem necessidade de instalação.
+
+🚀 Funcionalidades
+📂 Galeria organizada por categorias (Banners, Buttons, Footers, Effects)
+🔎 Sistema de filtro dinâmico por tipo de componente
+🎨 Interface estilo cyberpunk com tema neon
+📺 Preview em tempo real via CodePen embed
+📱 Layout responsivo para desktop e mobile
+⚡ Animação scanline de fundo estilo terminal hacker
+🔘 Botões de download e doação por componente
+🧩 Categorias disponíveis
+🎯 Banners (componentes de destaque visual)
+🔘 Buttons (botões interativos estilizados)
+🧱 Footers (rodapés modernos e animados)
+✨ Effects (efeitos visuais e backgrounds)
+🛠️ Tecnologias utilizadas
+HTML5
+CSS3 (animações, grid e efeitos visuais)
+JavaScript (filtros e interações)
+CodePen Embed (renderização de exemplos)
+📁 Estrutura do projeto
+cyber-code-gallery/
+├── index.html       # Estrutura principal da galeria
+├── style.css        # Estilização cyberpunk e layout
+├── script.js        # Lógica de filtros e interação
+└── README.md        # Documentação do projeto
+⚙️ Como funciona
+O usuário acessa a galeria
+Escolhe uma categoria (ex: Buttons, Banners)
+Os componentes são filtrados dinamicamente
+Cada item exibe um preview ao vivo via CodePen
+O usuário pode visualizar, baixar ou apoiar o conteúdo
+📌 Como usar
+▶️ Localmente
+
+Basta abrir o arquivo:
+
+index.html
+
+no navegador.
+
+🌐 Online (GitHub Pages)
+
+Se estiver hospedado no GitHub Pages, acesse:
+
+https://seu-usuario.github.io/cyber-code-gallery/
+🎯 Objetivo do projeto
+
+Este projeto foi criado com foco em:
+
+Estudo de interfaces modernas (UI/UX)
+Criação de biblioteca de componentes reutilizáveis
+Exploração de efeitos visuais em CSS
+Organização de projetos front-end reais
+Construção de portfólio dev profissional
+💡 Possíveis melhorias futuras
+🔍 Barra de busca por componentes
+❤️ Sistema de favoritos
+📦 Download direto dos códigos
+🧠 Tags inteligentes por tecnologia
+🌙 Dark/Light mode
+🚀 Página de documentação estilo SaaS
+👨‍💻 Autor
+
+Desenvolvido por saulomgg
+
+Projeto pessoal focado em desenvolvimento front-end, interfaces modernas e experimentação visual.
+
+⚠️ Observação
+
+Este projeto é experimental e serve como galeria de estudos e demonstrações de componentes web.
