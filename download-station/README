@@ -1,0 +1,38 @@
+# 📥 Download Station - Cyber Edition
+
+Interface interativa em HTML, CSS e JavaScript que simula um sistema de download com desbloqueio por interação em anúncios. O projeto foi desenvolvido com estética cyberpunk e foco em experiência visual e engajamento do usuário.
+
+---
+
+## 🌐 Demonstração
+
+https://saulomgg.github.io/WebProjects/download-station/
+
+---
+
+## 📌 Sobre o Projeto
+
+O **Download Station** é uma landing page interativa onde o usuário precisa interagir com elementos da página (anúncios) para liberar o botão de download.
+
+O projeto combina:
+
+- 🎮 UI cyberpunk
+- ⚡ Interações com JavaScript
+- 🎨 Estilo neon/glitch
+- 📱 Layout responsivo
+- 💡 Experiência gamificada
+
+---
+
+## ⚙️ Funcionalidades
+
+- 🔒 Botão de download bloqueado até interação
+- 🖱️ Sistema de clique em “ads”
+- 🔗 Redirecionamento dinâmico via URL (`redirect_to`)
+- 🎨 Efeitos visuais cyberpunk (glitch + neon)
+- 📱 Design responsivo para mobile e desktop
+- ⚡ Interface leve sem frameworks
+
+---
+
+## 📂 Estrutura do Projeto
