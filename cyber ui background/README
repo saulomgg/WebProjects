@@ -1,0 +1,45 @@
+⚡ Cyber UI Background
+
+Ferramenta visual web que cria um fundo animado estilo cyberpunk utilizando HTML, CSS e JavaScript.
+
+O projeto gera efeitos de partículas, grid dinâmico e iluminação ambiente para simular uma interface futurista.
+
+📌 Sobre
+
+Este projeto é um experimento de interface visual focado em animações web e efeitos gráficos em tempo real.
+
+Foi desenvolvido com foco em estética cyberpunk, leveza e interação visual.
+
+⚙️ Funcionalidades
+⚡ Fundo animado com gradiente dinâmico
+🔲 Grid em movimento contínuo
+✨ Sistema de partículas flutuantes
+🌌 Efeito glow central (iluminação ambiente)
+🖱️ Animações responsivas e fluidas
+🎨 Estilo cyberpunk moderno
+🛠️ Tecnologias utilizadas
+HTML5
+CSS3
+JavaScript
+GSAP (animações)
+📁 Estrutura do projeto
+cyber ui background/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+📌 Como usar
+
+Abra o arquivo index.html no navegador ou acesse via GitHub Pages para visualizar o efeito.
+
+🌐 Preview
+
+https://saulomgg.github.io/WebProjects/cyber%20ui%20background/
+
+👨‍💻 Autor
+
+Desenvolvido por saulomgg
+
+⚠️ Observação
+
+Projeto experimental focado em estudos de interfaces, animações e efeitos visuais web.
