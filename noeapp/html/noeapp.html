@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>NoeApp - Apps Descentralizados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <meta name="theme-color" content="#0a0e27">
+    <style>
+        .apps-portal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .app-portal-card {
+            background: linear-gradient(145deg, rgba(26, 31, 58, 0.8), rgba(10, 14, 39, 0.9));
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 24px;
+            padding: 30px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .app-portal-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            opacity: 0.7;
+        }
+        .app-portal-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 15px 40px rgba(0, 212, 255, 0.25);
+            background: rgba(26, 31, 58, 0.95);
+        }
+        .app-portal-icon {
+            font-size: 48px;
+            margin-bottom: 5px;
+            filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.3));
+            transition: transform 0.3s ease;
+        }
+        .app-portal-card:hover .app-portal-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        .app-portal-info h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem;
+            color: #fff;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+        }
+        .app-portal-info p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+        .app-portal-tags {
+            display: flex;
+            gap: 8px;
+            margin-top: auto;
+            flex-wrap: wrap;
+        }
+        .app-portal-tag {
+            padding: 5px 12px;
+            border-radius: 8px;
+            font-size: 0.65rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        .tag-gratis { background: rgba(0, 212, 255, 0.1); color: var(--primary); border: 1px solid rgba(0, 212, 255, 0.3); }
+        .tag-offline { background: rgba(255, 0, 110, 0.1); color: var(--secondary); border: 1px solid rgba(255, 0, 110, 0.3); }
+        .tag-privado { background: rgba(255, 190, 11, 0.1); color: var(--accent); border: 1px solid rgba(255, 190, 11, 0.3); }
+        
+        .app-portal-card::after {
+            content: 'ABRIR SISTEMA →';
+            position: absolute;
+            bottom: 20px;
+            right: 25px;
+            font-size: 0.7rem;
+            font-weight: 900;
+            color: var(--primary);
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: all 0.3s ease;
+        }
+        .app-portal-card:hover::after {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .privacy-banner {
+            background: linear-gradient(90deg, rgba(0, 212, 255, 0.05), rgba(255, 0, 110, 0.05));
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .privacy-banner i {
+            font-size: 2rem;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="glitch-bg"></div>
+    <div class="cyber-grid-bg"></div>
+
+    <div class="page-container">
+        <header class="page-header">
+            <button class="btn-back" onclick="location.href='index.html'">
+                <i class="fas fa-arrow-left"></i> Voltar
+            </button>
+            <h1 class="glitch-text" data-text="NOEAPP">NOEAPP</h1>
+            <div class="header-spacer"></div>
+        </header>
+
+        <main class="page-main">
+            <section class="page-hero">
+                <h2 class="section-title">Ecossistema Descentralizado</h2>
+                <p class="section-subtitle">Apps que funcionam para você, não contra você. Sem internet, sem rastreio, 100% seu.</p>
+            </section>
+
+            <section class="page-content">
+                <div class="apps-portal-grid">
+                    <!-- GESTOR PET -->
+                    <div class="app-portal-card" onclick="location.href='../noeapp/app1/index.html'">
+                        <div class="app-portal-icon">🐾</div>
+                        <div class="app-portal-info">
+                            <h3>Noe Gestor Pet</h3>
+                            <p>Gestão completa para pets e clínicas. Cadastro, vacinas e histórico local.</p>
+                        </div>
+                        <div class="app-portal-tags">
+                            <span class="app-portal-tag tag-gratis">GRÁTIS</span>
+                            <span class="app-portal-tag tag-offline">OFFLINE</span>
+                        </div>
+                    </div>
+
+                    <!-- NOE CONTROLE -->
+                    <div class="app-portal-card" onclick="location.href='../noeapp/app2/index.html'">
+                        <div class="app-portal-icon">📊</div>
+                        <div class="app-portal-info">
+                            <h3>Noe Controle</h3>
+                            <p>Controle financeiro e de estoque inteligente para o seu negócio.</p>
+                        </div>
+                        <div class="app-portal-tags">
+                            <span class="app-portal-tag tag-gratis">GRÁTIS</span>
+                            <span class="app-portal-tag tag-privado">PRIVADO</span>
+                        </div>
+                    </div>
+
+                    <!-- NOE FARMA -->
+                    <div class="app-portal-card" onclick="location.href='../noeapp/app3/index.html'">
+                        <div class="app-portal-icon">💊</div>
+                        <div class="app-portal-info">
+                            <h3>Noe Farma</h3>
+                            <p>Sistema independente para farmácias e drogarias. Gestão sem nuvem.</p>
+                        </div>
+                        <div class="app-portal-tags">
+                            <span class="app-portal-tag tag-gratis">GRÁTIS</span>
+                            <span class="app-portal-tag tag-offline">OFFLINE</span>
+                        </div>
+                    </div>
+
+                    <!-- ORÇAMENTO EXPRESS -->
+                    <div class="app-portal-card" onclick="window.open('https://orcamentoexpress.pages.dev', '_blank')">
+                        <div class="app-portal-icon">📋</div>
+                        <div class="app-portal-info">
+                            <h3>Orçamento Express</h3>
+                            <p>Gere orçamentos profissionais em PDF e envie em segundos.</p>
+                        </div>
+                        <div class="app-portal-tags">
+                            <span class="app-portal-tag tag-gratis">GRÁTIS</span>
+                            <span class="app-portal-tag tag-privado">RÁPIDO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="privacy-banner">
+                    <i class="fas fa-user-secret"></i>
+                    <div>
+                        <h4 style="color: var(--primary); margin-bottom: 5px;">Privacidade por Padrão</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary);">Nenhum dado é salvo em lugar nenhum. Todos os apps funcionam de forma independente e offline. Seus dados, suas regras.</p>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <h3>Quer ajudar a construir?</h3>
+                    <p>A NOE é feita pela comunidade. Participe do nosso fórum no Telegram.</p>
+                    <a href="https://t.me/+bkaEAqozRx03MWY5" class="btn-cta" target="_blank">
+                        <i class="fab fa-telegram"></i> Entrar no Fórum
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>© 2024 NOE • Nova Ordem Estrutural</p>
+        </footer>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

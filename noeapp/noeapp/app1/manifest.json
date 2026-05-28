@@ -1,0 +1,26 @@
+{
+  "name": "NOE GestorPet",
+  "short_name": "GestorPet",
+  "description": "Gerencie a saúde e rotina do seu pet com facilidade. Parte do Ecossistema NOE.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#FF6B9D",
+  "background_color": "#ffffff",
+  "categories": ["health", "productivity", "lifestyle"],
+  "icons": [
+    {
+      "src": "noe-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "noe-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

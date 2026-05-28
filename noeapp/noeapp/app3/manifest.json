@@ -1,0 +1,33 @@
+{
+  "name": "NOE Farma - Gerenciador de Medicamentos",
+  "short_name": "NOE Farma",
+  "description": "Gerenciador de medicamentos com notificações, farmácias e pedidos por WhatsApp. 100% offline e privado.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF6B9D",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "noe-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "noe-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["health", "productivity"],
+  "screenshots": [
+    {
+      "src": "noe-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}
